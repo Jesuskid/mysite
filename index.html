@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Delalie !</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <script src="https://use.fontawesome.com/98e45ddef0.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+</head>
+
+<body>
+<header>
+  <div class="top-container">
+  <div class="social-head right">
+    <a class="social-link" href="https://www.linkedin.com/in/delalie-rawllings-tabot-b-h-593b87166/">
+    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+  </a>
+    <a class="social-link" href="https://web.facebook.com/inett.ga"><i class="fab fa-facebook-f">
+    </i>
+    </a>
+    <a class="social-link" href="https://github.com/Jesuskid"><i class="fab fa-github"></i>
+    </i>
+    </a>
+  </div>
+    <img class="top-cloud" src="images/cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1>I'm Rawllings.</h1>
+      <h2>this is my entry.</h2>
+    </div>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
+    <img class="mountain" src="images/mountain.png" alt="mountain-img">
+  </div>
+  </header>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/emo.png" alt="emo-img">
+      <h2>Hello.</h2>
+      <p class="intro">I am a self taught software developer looking to become better.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="code-img" src="https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif" alt="code-img">
+
+        <h3>Development</h3>
+        <p>I started learning to code when I was 15 years old because I wanted to make my own video games. I used blender game engine now UBGE and the logic bricks were not goood enough so I went into bpy where I discovered python. Over time, I learnt python and javascript and I some stuff with it. Like a few of these below</p>
+
+      </div>
+
+      <div class="skill-row">
+       <div id="Flask" class="tabcontent">
+          <h1>My Flask blog</h1>
+          <p style='color: black;'>Python(flaks) combined with javascript and jquery</p><br>
+          <a href='https://rawllings-blog.herokuapp.com/'>view</a>
+        </div>
+
+        <div id="Bible" class="tabcontent">
+          <h1 >Golden bible</h1>
+          <p style='color: black;'>My very own bible app excusite written in javascript(node.js, electron)</p>
+          <a href='#'>Not available online</a>
+        </div>
+
+        <div id="Zone" class="tabcontent">
+          <h1 style='color: white;'>Zone</h1>
+          <p>Zone was an attempt on an accouting app sadly my hardrive got corrupted</p>
+        </div>
+
+        <div id="Learn" class="tabcontent">
+          <h1 style='color: white;'>Learn</h1>
+          <p>A bit buggy not yet finished flash card app I created an used it during my accounting studies. The only problem is the database has to manually be moved to the program files directory from the appdata diretory after installation. I would fix this in the near future</p>
+          <a href='https://drive.google.com/file/d/1dt8zbbLeINJhIzJbN3zg8sjkTVR5j9rj/view?usp=sharing'>view</a>
+        </div>
+
+        <button class="tablink" onclick="openCity('Flask', this, 'azure')" id="defaultOpen">Flask Blog</button>
+        <button class="tablink" onclick="openCity('Bible', this, 'azure')">Golden bible</button>
+        <button class="tablink" onclick="openCity('Zone', this, 'turquoise')">Zone</button>
+        <button class="tablink" onclick="openCity('Learn', this, 'turquoise')">Learn</button> 
+      </div>
+
+      <div class="skill-row">
+        <img class="c-img" src="images/computer.png" alt="computer img">
+
+        <h3>More about me</h3>
+        <p>My best skill is actually well you guessed right coding.</p>
+
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you love coding as much as I do.</h3>
+      <p class="contact-message"></p>
+      <a href="mailto:frawllings@gmail.com">Contact Me</a>.<br>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/delalie-rawllings-tabot-b-h-593b87166/">LinkedIn</a>
+    <a class="footer-link" href="https://web.facebook.com/inett.ga">Facebook</a>
+    <p class="copyright">© 2021 Delalie.</p>
+  </div>
+
+  <script>
+  function openCity(Name, thisButton, color) {
+  // Hide Tabs
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  //destory current tablink color display 
+
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+
+//display currrent tab and set background colors
+  document.getElementById(Name).style.display = "block";
+  thisButton.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click(); 
+   
+  </script>
+</body>
+
+</html>
